@@ -1,0 +1,207 @@
+<mat-card>
+  <h2 class="mat-display-2">View Invoices</h2>
+  <div class="control-header">
+    <mat-card class="control-card">
+      <mat-card-header>
+        <mat-card-title>Find By Date</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-form-field>
+          <mat-label>Choose Date</mat-label>
+          <input
+            matInput
+            [(value)]="selectedDate"
+            (dateChange)="handleDateChange($event)"
+            [matDatepicker]="picker"
+            placeholder="Choose a date"
+          />
+          <mat-datepicker-toggle
+            matSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-card-actions>
+          <button
+            (click)="getInvoicesByDate(selectedDate)"
+            mat-raised-button
+            color="accent"
+          >
+            Fetch Invoices for {{ selectedDate | date }}
+          </button>
+          <button (click)="clear()" mat-raised-button color="warn">
+            Clear
+          </button>
+        </mat-card-actions>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="control-card">
+      <mat-card-header>
+        <mat-card-title>Find By Customer #</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-form-field>
+          <mat-label>Customer Number</mat-label>
+          <input
+            matInput
+            [(ngModel)]="customerNumber"
+            placeholder="Input a Customer Number"
+          />
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions>
+        <button
+          (click)="getInvoicesByCustomerNumber()"
+          mat-raised-button
+          color="accent"
+        >
+          Get #{{ customerNumber }}
+        </button>
+        <button (click)="clear()" mat-raised-button color="warn">Clear</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</mat-card>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Select By Represenative</mat-card-title>
+  </mat-card-header>
+  <mat-card-actions>
+    <div class="rep-actions">
+      <button
+        mat-raised-button
+        color="accent"
+        (click)="selectAllByRep('William')"
+      >
+        Copy William
+      </button>
+      <button
+        mat-raised-button
+        color="accent"
+        (click)="selectAllByRep('Mohammad')"
+      >
+        Copy Mohammad
+      </button>
+      <button
+        mat-raised-button
+        color="accent"
+        (click)="selectAllByRep('Sameer')"
+      >
+        Copy Sameer
+      </button>
+      <button
+        mat-raised-button
+        color="accent"
+        (click)="selectAllByRep('House')"
+      >
+        Copy House
+      </button>
+    </div>
+  </mat-card-actions>
+</mat-card>
+
+<mat-card>
+  <h1 class="mat-h2">{{ currentInvoiceView }}</h1>
+  <button (click)="copySelectedCustomers()" mat-fab color="accent">
+    <mat-icon>content_copy</mat-icon>
+  </button>
+  <table
+    mat-table
+    *ngIf="unPostedDataSource != null"
+    [dataSource]="unPostedDataSource"
+    class="mat-elevation-z5"
+    multiTemplateDataRows
+    matSort
+  >
+    <ng-container matColumnDef="select">
+      <th mat-header-cell *matHeaderCellDef>
+        <mat-checkbox
+          (change)="$event ? masterToggle() : null"
+          [checked]="selection.hasValue() && isAllSelected()"
+          [indeterminate]="selection.hasValue() && !isAllSelected()"
+          [aria-label]="checkboxLabel()"
+        >
+        </mat-checkbox>
+      </th>
+      <td mat-cell *matCellDef="let row">
+        <mat-checkbox
+          (click)="$event.stopPropagation()"
+          (change)="$event ? selection.toggle(row) : null"
+          [checked]="selection.isSelected(row)"
+          [aria-label]="checkboxLabel(row)"
+        >
+        </mat-checkbox>
+      </td>
+      <td mat-footer-cell *matFooterCellDef></td>
+    </ng-container>
+
+    <ng-container matColumnDef="view">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let invoice">
+        <a
+          mat-button
+          [routerLink]="['/invoice', invoice.invoiceObjID]"
+          mat-button
+        >
+          <mat-icon>receipt</mat-icon>
+        </a>
+      </td>
+      <td mat-footer-cell *matFooterCellDef></td>
+    </ng-container>
+
+    <ng-container matColumnDef="num">
+      <th mat-header-cell *matHeaderCellDef>Cust #</th>
+      <td mat-cell *matCellDef="let invoice">{{ invoice.num }}</td>
+      <td mat-footer-cell *matFooterCellDef></td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Store</th>
+      <td mat-cell *matCellDef="let invoice">{{ invoice.name }}</td>
+      <td mat-footer-cell *matFooterCellDef></td>
+    </ng-container>
+
+    <ng-container matColumnDef="invoicedDate">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Date</th>
+      <td mat-cell *matCellDef="let invoice">
+        {{ invoice.invoicedDate | date }}
+      </td>
+      <td mat-footer-cell *matFooterCellDef></td>
+    </ng-container>
+
+    <ng-container matColumnDef="repFirstName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Rep</th>
+      <td mat-cell *matCellDef="let invoice">{{ invoice.repFirstName }}</td>
+      <td mat-footer-cell *matFooterCellDef></td>
+    </ng-container>
+
+    <ng-container matColumnDef="totalPrice">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Total</th>
+      <td mat-cell *matCellDef="let invoice">
+        {{ invoice.totalPrice | currency }}
+      </td>
+      <td mat-footer-cell *matFooterCellDef>
+        {{ getTotalSales() | currency }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="totalProfit">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Profits</th>
+      <td class="profit" mat-cell *matCellDef="let invoice">
+        {{ invoice.totalProfit | currency }}
+      </td>
+      <td class="profit" mat-footer-cell *matFooterCellDef>
+        {{ getTotalProfits() | currency }}
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr
+      mat-row
+      *matRowDef="let row; columns: displayedColumns; let i = index"
+      class="example-detail-row"
+    ></tr>
+    <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+  </table>
+</mat-card>

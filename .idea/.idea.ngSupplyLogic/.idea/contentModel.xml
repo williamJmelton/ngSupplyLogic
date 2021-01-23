@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\ifEls\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\ifEls\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_ngSupplyLogic.-1914041051.00" t="ExcludeRecursive" />
+    <e p="C:\Users\ifEls\Code\Dotnet Projects\ngSupplyLogic" t="IncludeRecursive">
+      <e p=".gitignore" t="Include" />
+      <e p="appsettings.Development.json" t="Include" />
+      <e p="appsettings.json" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="ClientApp" t="Include">
+        <e p=".editorconfig" t="Include" />
+        <e p=".gitignore" t="Include" />
+        <e p=".vscode" t="Include">
+          <e p="settings.json" t="Include" />
+        </e>
+        <e p="angular.json" t="Include" />
+        <e p="browserslist" t="Include" />
+        <e p="dist" t="Include">
+          <e p="3rdpartylicenses.txt" t="Include" />
+          <e p="index.html" t="Include" />
+          <e p="main-es2015.f098d5a8daa83d10b48a.js" t="Include" />
+          <e p="main-es5.f098d5a8daa83d10b48a.js" t="Include" />
+          <e p="polyfills-es2015.5b10b8fd823b6392f1fd.js" t="Include" />
+          <e p="polyfills-es5.3e8196928d184a6e5319.js" t="Include" />
+          <e p="runtime-es2015.c5fa8325f89fc516600b.js" t="Include" />
+          <e p="runtime-es5.c5fa8325f89fc516600b.js" t="Include" />
+          <e p="styles.f6f511a755c7f6575cd3.css" t="Include" />
+        </e>
+        <e p="e2e" t="Include">
+          <e p="protractor.conf.js" t="Include" />
+          <e p="src" t="Include">
+            <e p="app.e2e-spec.ts" t="Include" />
+            <e p="app.po.ts" t="Include" />
+          </e>
+          <e p="tsconfig.e2e.json" t="Include" />
+        </e>
+        <e p="node_modules\@angular\animations" t="IncludeRecursive" />
+        <e p="node_modules\@angular\cdk" t="IncludeRecursive" />
+        <e p="node_modules\@angular\cli" t="IncludeRecursive" />
+        <e p="node_modules\@angular\common" t="IncludeRecursive" />
+        <e p="node_modules\@angular\compiler" t="IncludeRecursive" />
+        <e p="node_modules\@angular\compiler-cli" t="IncludeRecursive" />
+        <e p="node_modules\@angular\core" t="IncludeRecursive" />
+        <e p="node_modules\@angular\fire" t="IncludeRecursive" />
+        <e p="node_modules\@angular\forms" t="IncludeRecursive" />
+        <e p="node_modules\@angular\material" t="IncludeRecursive" />
+        <e p="node_modules\@angular\platform-browser" t="IncludeRecursive" />
+        <e p="node_modules\@angular\platform-browser-dynamic" t="IncludeRecursive" />
+        <e p="node_modules\@angular\platform-server" t="IncludeRecursive" />
+        <e p="node_modules\@angular\router" t="IncludeRecursive" />
+        <e p="node_modules\@angular-devkit\architect" t="IncludeRecursive" />
+        <e p="node_modules\@angular-devkit\build-angular" t="IncludeRecursive" />
+        <e p="node_modules\@angular-devkit\build-optimizer" t="IncludeRecursive" />
+        <e p="node_modules\@angular-devkit\build-webpack" t="IncludeRecursive" />
+        <e p="node_modules\@angular-devkit\core" t="IncludeRecursive" />
+        <e p="node_modules\@angular-devkit\schematics" t="IncludeRecursive" />
+        <e p="node_modules\@firebase\analytics" t="IncludeRecursive" />
+        <e p="node_modules\@firebase\app" t="IncludeRecursive" />
+        <e p="node_modules\@firebase\component" t="IncludeRecursive" />
+        <e p="node_modules\@firebase\database" t="IncludeRecursive" />
+        <e p="node_modules\@firebase\firestore" t="IncludeRecursive" />
+        <e p="node_modules\@firebase\functions" t="IncludeRecursive" />
+        <e p="node_modules\@firebase\installations" t="IncludeRecursive" />
+        <e p="node_modules\@firebase\logger" t="IncludeRecursive" />
+        <e p="node_modules\@firebase\messaging" t="IncludeRecursive" />
+        <e p="node_modules\@firebase\performance" t="IncludeRecursive" />
+        <e p="node_modules\@firebase\polyfill" t="IncludeRecursive" />
+        <e p="node_modules\@firebase\remote-config" t="IncludeRecursive" />
+        <e p="node_modules\@firebase\storage" t="IncludeRecursive" />
+        <e p="node_modules\@firebase\util" t="IncludeRecursive" />
+        <e p="node_modules\@firebase\webchannel-wrapper" t="IncludeRecursive" />
+        <e p="node_modules\@grpc\grpc-js" t="IncludeRecursive" />
+        <e p="node_modules\@grpc\proto-loader" t="IncludeRecursive" />
+        <e p="node_modules\@ngtools\webpack" t="IncludeRecursive" />
+        <e p="node_modules\@nguniversal\module-map-ngfactory-loader" t="IncludeRecursive" />
+        <e p="node_modules\@protobufjs\aspromise" t="IncludeRecursive" />
+        <e p="node_modules\@protobufjs\base64" t="IncludeRecursive" />
+        <e p="node_modules\@protobufjs\codegen" t="IncludeRecursive" />
+        <e p="node_modules\@protobufjs\eventemitter" t="IncludeRecursive" />
+        <e p="node_modules\@protobufjs\fetch" t="IncludeRecursive" />
+        <e p="node_modules\@protobufjs\float" t="IncludeRecursive" />
+        <e p="node_modules\@protobufjs\inquire" t="IncludeRecursive" />
+        <e p="node_modules\@protobufjs\path" t="IncludeRecursive" />
+        <e p="node_modules\@protobufjs\pool" t="IncludeRecursive" />
+        <e p="node_modules\@protobufjs\utf8" t="IncludeRecursive" />
+        <e p="node_modules\@types" t="IncludeRecursive">
+          <e p="events" t="IncludeRecursive" />
+          <e p="jasmine" t="IncludeRecursive" />
+          <e p="jasminewd2" t="IncludeRecursive" />
+          <e p="minimatch" t="IncludeRecursive" />
+          <e p="node" t="IncludeRecursive" />
+          <e p="source-list-map" t="IncludeRecursive" />
+        </e>
+        <e p="node_modules\ace" t="IncludeRecursive" />
+        <e p="node_modules\ace-builds" t="IncludeRecursive" />
+        <e p="node_modules\ajv" t="IncludeRecursive" />
+        <e p="node_modules\arg" t="IncludeRecursive" />
+        <e p="node_modules\aspnet-prerendering" t="IncludeRecursive" />
+        <e p="node_modules\blocking-proxy" t="IncludeRecursive" />
+        <e p="node_modules\bootstrap" t="IncludeRecursive" />
+        <e p="node_modules\brace" t="IncludeRecursive" />
+        <e p="node_modules\canonical-path" t="IncludeRecursive" />
+        <e p="node_modules\chokidar" t="IncludeRecursive" />
+        <e p="node_modules\codelyzer" t="IncludeRecursive" />
+        <e p="node_modules\commander" t="IncludeRecursive" />
+        <e p="node_modules\core-js" t="IncludeRecursive" />
+        <e p="node_modules\coverage-istanbul-loader" t="IncludeRecursive" />
+        <e p="node_modules\dependency-graph" t="IncludeRecursive" />
+        <e p="node_modules\domino" t="IncludeRecursive" />
+        <e p="node_modules\ecdsa-sig-formatter" t="IncludeRecursive" />
+        <e p="node_modules\es6-promise" t="IncludeRecursive" />
+        <e p="node_modules\fast-deep-equal" t="IncludeRecursive" />
+        <e p="node_modules\fast-json-stable-stringify" t="IncludeRecursive" />
+        <e p="node_modules\firebase" t="IncludeRecursive" />
+        <e p="node_modules\gaxios" t="IncludeRecursive" />
+        <e p="node_modules\gcp-metadata" t="IncludeRecursive" />
+        <e p="node_modules\google-auth-library" t="IncludeRecursive" />
+        <e p="node_modules\google-p12-pem" t="IncludeRecursive" />
+        <e p="node_modules\gtoken" t="IncludeRecursive" />
+        <e p="node_modules\hammerjs" t="IncludeRecursive" />
+        <e p="node_modules\https-proxy-agent" t="IncludeRecursive" />
+        <e p="node_modules\idb" t="IncludeRecursive" />
+        <e p="node_modules\jasmine-core" t="IncludeRecursive" />
+        <e p="node_modules\jasmine-spec-reporter" t="IncludeRecursive" />
+        <e p="node_modules\jest-worker" t="IncludeRecursive" />
+        <e p="node_modules\jquery" t="IncludeRecursive" />
+        <e p="node_modules\karma" t="IncludeRecursive" />
+        <e p="node_modules\karma-chrome-launcher" t="IncludeRecursive" />
+        <e p="node_modules\karma-coverage-istanbul-reporter" t="IncludeRecursive" />
+        <e p="node_modules\karma-jasmine" t="IncludeRecursive" />
+        <e p="node_modules\karma-jasmine-html-reporter" t="IncludeRecursive" />
+        <e p="node_modules\license-webpack-plugin" t="IncludeRecursive" />
+        <e p="node_modules\magic-string" t="IncludeRecursive" />
+        <e p="node_modules\ng2-ace-editor" t="IncludeRecursive" />
+        <e p="node_modules\ngx-ace-editor-wrapper" t="IncludeRecursive" />
+        <e p="node_modules\node-sass" t="IncludeRecursive" />
+        <e p="node_modules\oidc-client" t="IncludeRecursive" />
+        <e p="node_modules\popper.js" t="IncludeRecursive" />
+        <e p="node_modules\portfinder" t="IncludeRecursive" />
+        <e p="node_modules\postcss" t="IncludeRecursive" />
+        <e p="node_modules\protobufjs" t="IncludeRecursive" />
+        <e p="node_modules\protractor" t="IncludeRecursive" />
+        <e p="node_modules\reflect-metadata" t="IncludeRecursive" />
+        <e p="node_modules\rxjs" t="IncludeRecursive" />
+        <e p="node_modules\safe-buffer" t="IncludeRecursive" />
+        <e p="node_modules\source-map" t="IncludeRecursive" />
+        <e p="node_modules\sourcemap-codec" t="IncludeRecursive" />
+        <e p="node_modules\symbol-observable" t="IncludeRecursive" />
+        <e p="node_modules\terser" t="IncludeRecursive" />
+        <e p="node_modules\tree-kill" t="IncludeRecursive" />
+        <e p="node_modules\ts-node" t="IncludeRecursive" />
+        <e p="node_modules\tslib" t="IncludeRecursive" />
+        <e p="node_modules\tslint" t="IncludeRecursive" />
+        <e p="node_modules\upath" t="IncludeRecursive" />
+        <e p="node_modules\uri-js" t="IncludeRecursive" />
+        <e p="node_modules\webdriver-js-extender" t="IncludeRecursive" />
+        <e p="node_modules\worker-farm" t="IncludeRecursive" />
+        <e p="node_modules\zone.js" t="IncludeRecursive" />
+        <e p="package-lock.json" t="Include" />
+        <e p="package.json" t="Include" />
+        <e p="README.md" t="Include" />
+        <e p="src" t="Include">
+          <e p="app" t="Include">
+            <e p="app.component.html" t="Include" />
+            <e p="app.component.ts" t="Include" />
+            <e p="app.module.ts" t="Include" />
+            <e p="app.server.module.ts" t="Include" />
+            <e p="customer-detail" t="Include">
+              <e p="customer-detail.component.css" t="Include" />
+              <e p="customer-detail.component.html" t="Include" />
+              <e p="customer-detail.component.ts" t="Include" />
+            </e>
+            <e p="customer-mgmt" t="Include">
+              <e p="customer-mgmt.component.css" t="Include" />
+              <e p="customer-mgmt.component.html" t="Include" />
+              <e p="customer-mgmt.component.ts" t="Include" />
+            </e>
+            <e p="home" t="Include">
+              <e p="home-component.css" t="Include" />
+              <e p="home.component.html" t="Include" />
+              <e p="home.component.ts" t="Include" />
+              <e p="wordlist.js" t="Include" />
+            </e>
+            <e p="material.module.ts" t="Include" />
+            <e p="nav-menu" t="Include">
+              <e p="nav-menu.component.css" t="Include" />
+              <e p="nav-menu.component.html" t="Include" />
+              <e p="nav-menu.component.ts" t="Include" />
+            </e>
+            <e p="send-messages" t="Include">
+              <e p="send-messages.component.css" t="Include" />
+              <e p="send-messages.component.html" t="Include" />
+              <e p="send-messages.component.ts" t="Include" />
+            </e>
+          </e>
+          <e p="assets" t="Include">
+            <e p=".gitkeep" t="Include" />
+          </e>
+          <e p="environments" t="Include">
+            <e p="environment.prod.ts" t="Include" />
+            <e p="environment.ts" t="Include" />
+          </e>
+          <e p="index.html" t="Include" />
+          <e p="karma.conf.js" t="Include" />
+          <e p="main.ts" t="Include" />
+          <e p="polyfills.ts" t="Include" />
+          <e p="styles.css" t="Include" />
+          <e p="test.ts" t="Include" />
+          <e p="tsconfig.app.json" t="Include" />
+          <e p="tsconfig.server.json" t="Include" />
+          <e p="tsconfig.spec.json" t="Include" />
+          <e p="tslint.json" t="Include" />
+        </e>
+        <e p="tsconfig.json" t="Include" />
+        <e p="tslint.json" t="Include" />
+        <e p="wordlist.js" t="Include" />
+      </e>
+      <e p="Controllers" t="Include">
+        <e p="CustomersController.cs" t="Include" />
+        <e p="DatabaseController.cs" t="Include" />
+        <e p="WeatherForecastController.cs" t="Include" />
+      </e>
+      <e p="DataStorage" t="Include">
+        <e p="customerData.json" t="Include" />
+      </e>
+      <e p="Models" t="Include">
+        <e p="AradjustmentReason.cs" t="Include" />
+        <e p="Artransaction.cs" t="Include" />
+        <e p="ArtransAppliedTo.cs" t="Include" />
+        <e p="Brand.cs" t="Include" />
+        <e p="BuyingAllowance.cs" t="Include" />
+        <e p="Category.cs" t="Include" />
+        <e p="Class.cs" t="Include" />
+        <e p="ComboItemComponent.cs" t="Include" />
+        <e p="Company.cs" t="Include" />
+        <e p="CompanySalesOrderMessage.cs" t="Include" />
+        <e p="Contact.cs" t="Include" />
+        <e p="CreditReason.cs" t="Include" />
+        <e p="Customer.cs" t="Include" />
+        <e p="CustomerAr.cs" t="Include" />
+        <e p="CustomerItemPricing.cs" t="Include" />
+        <e p="CustomerLocation.cs" t="Include" />
+        <e p="CustomerNote.cs" t="Include" />
+        <e p="customerRouteCustomer.cs" t="Include" />
+        <e p="CustomerSalesOrderMessage.cs" t="Include" />
+        <e p="DailyMovementItem.cs" t="Include" />
+        <e p="DeliveryRoute.cs" t="Include" />
+        <e p="DeliveryRouteStop.cs" t="Include" />
+        <e p="DraftOrdersResult.cs" t="Include" />
+        <e p="InvBatch.cs" t="Include" />
+        <e p="InvBatchDetail.cs" t="Include" />
+        <e p="InvoiceReportLine.cs" t="Include" />
+        <e p="InvTranReason.cs" t="Include" />
+        <e p="Item.cs" t="Include" />
+        <e p="ItemAuth.cs" t="Include" />
+        <e p="ItemCosting.cs" t="Include" />
+        <e p="ItemInventoryLocation.cs" t="Include" />
+        <e p="ItemInventoryOnHand.cs" t="Include" />
+        <e p="ItemInventoryPurchased.cs" t="Include" />
+        <e p="ItemInventorySold.cs" t="Include" />
+        <e p="ItemInventoryTrans.cs" t="Include" />
+        <e p="ItemTempTrans.cs" t="Include" />
+        <e p="LowStockResult.cs" t="Include" />
+        <e p="Manufacturer.cs" t="Include" />
+        <e p="ManufacturerReporting.cs" t="Include" />
+        <e p="MenuFunction.cs" t="Include" />
+        <e p="MenuOption.cs" t="Include" />
+        <e p="MonthlybrandSales.cs" t="Include" />
+        <e p="MonthlyCategorySales.cs" t="Include" />
+        <e p="MonthlyClassSales.cs" t="Include" />
+        <e p="MonthlyCustomerSales.cs" t="Include" />
+        <e p="MonthlyItemSales.cs" t="Include" />
+        <e p="MonthlymanufacturerSales.cs" t="Include" />
+        <e p="MonthlySales.cs" t="Include" />
+        <e p="MonthlySalesRepSales.cs" t="Include" />
+        <e p="Msacusts.cs" t="Include" />
+        <e p="Msaitems.cs" t="Include" />
+        <e p="Object.cs" t="Include" />
+        <e p="PaymentTerm.cs" t="Include" />
+        <e p="PhoneNumber.cs" t="Include" />
+        <e p="PoadjustmentReason.cs" t="Include" />
+        <e p="Poexpense.cs" t="Include" />
+        <e p="Pospayments.cs" t="Include" />
+        <e p="PricingGroup.cs" t="Include" />
+        <e p="PurchaseOrder.cs" t="Include" />
+        <e p="PurchaseOrderLine.cs" t="Include" />
+        <e p="PurchaseOrderSalesTax.cs" t="Include" />
+        <e p="Qbcustomer.cs" t="Include" />
+        <e p="Qbitem.cs" t="Include" />
+        <e p="RemoteOrder.cs" t="Include" />
+        <e p="RemoteOrderLine.cs" t="Include" />
+        <e p="ReportFormat.cs" t="Include" />
+        <e p="ReportFormatAddIns.cs" t="Include" />
+        <e p="ReportFormatCategory.cs" t="Include" />
+        <e p="ReportFormatMnfr.cs" t="Include" />
+        <e p="SalesOrder.cs" t="Include" />
+        <e p="SalesOrderLine.cs" t="Include" />
+        <e p="SalesOrderLineTax.cs" t="Include" />
+        <e p="SalesOrderMessage.cs" t="Include" />
+        <e p="SalesOrderSalesTax.cs" t="Include" />
+        <e p="SalesRep.cs" t="Include" />
+        <e p="ScanCode.cs" t="Include" />
+        <e p="SellingAllowance.cs" t="Include" />
+        <e p="SellingContract.cs" t="Include" />
+        <e p="ShakespeareContext.cs" t="Include" />
+        <e p="Shift.cs" t="Include" />
+        <e p="Sldatabase.cs" t="Include" />
+        <e p="Slupdate.cs" t="Include" />
+        <e p="Soexpense.cs" t="Include" />
+        <e p="State.cs" t="Include" />
+        <e p="SystemNotification.cs" t="Include" />
+        <e p="SystemOption.cs" t="Include" />
+        <e p="SystemUser.cs" t="Include" />
+        <e p="TaxAuthority.cs" t="Include" />
+        <e p="TaxJurisdiction.cs" t="Include" />
+        <e p="TaxJurisdictionType.cs" t="Include" />
+        <e p="TaxRate.cs" t="Include" />
+        <e p="TaxStamp.cs" t="Include" />
+        <e p="TaxStampDenom.cs" t="Include" />
+        <e p="TaxStampItem.cs" t="Include" />
+        <e p="TaxType.cs" t="Include" />
+        <e p="Uda.cs" t="Include" />
+        <e p="UdaobjectValue.cs" t="Include" />
+        <e p="Udavalue.cs" t="Include" />
+        <e p="UnitSurcharge.cs" t="Include" />
+        <e p="UnPostedInvoiceResult.cs" t="Include" />
+        <e p="UpdateCustomerInfo.cs" t="Include" />
+        <e p="Vendor.cs" t="Include" />
+        <e p="VendorPaymentTerm.cs" t="Include" />
+        <e p="VendorReportResult.cs" t="Include" />
+        <e p="WeeklybrandSales.cs" t="Include" />
+        <e p="WeeklyCategorySales.cs" t="Include" />
+        <e p="WeeklyClassSales.cs" t="Include" />
+        <e p="WeeklyCustomerSales.cs" t="Include" />
+        <e p="WeeklyItemSales.cs" t="Include" />
+        <e p="WeeklymanufacturerSales.cs" t="Include" />
+        <e p="WeeklySales.cs" t="Include" />
+        <e p="WeeklySalesRepSales.cs" t="Include" />
+        <e p="WeeklySalesResult.cs" t="Include" />
+      </e>
+      <e p="ngSupplyLogic.csproj" t="IncludeRecursive" />
+      <e p="ngSupplyLogic.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="ngSupplyLogic.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="package-lock.json" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Pages" t="Include">
+        <e p="_ViewImports.cshtml" t="Include" />
+        <e p="Error.cshtml" t="Include" />
+        <e p="Error.cshtml.cs" t="Include" />
+      </e>
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="launchSettings.json" t="Include" />
+        <e p="PublishProfiles" t="Include">
+          <e p="FolderProfile.pubxml" t="Include" />
+        </e>
+      </e>
+      <e p="publish" t="Include">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="ClientApp" t="Include">
+          <e p="dist" t="Include">
+            <e p="3rdpartylicenses.txt" t="Include" />
+            <e p="index.html" t="Include" />
+            <e p="main-es2015.f098d5a8daa83d10b48a.js" t="Include" />
+            <e p="main-es5.f098d5a8daa83d10b48a.js" t="Include" />
+            <e p="polyfills-es2015.5b10b8fd823b6392f1fd.js" t="Include" />
+            <e p="polyfills-es5.3e8196928d184a6e5319.js" t="Include" />
+            <e p="runtime-es2015.c5fa8325f89fc516600b.js" t="Include" />
+            <e p="runtime-es5.c5fa8325f89fc516600b.js" t="Include" />
+            <e p="styles.f6f511a755c7f6575cd3.css" t="Include" />
+          </e>
+        </e>
+        <e p="cs" t="Include">
+          <e p="Microsoft.CodeAnalysis.CSharp.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.Workspaces.resources.dll" t="Include" />
+        </e>
+        <e p="DataStorage" t="Include">
+          <e p="customerData.json" t="Include" />
+        </e>
+        <e p="de" t="Include">
+          <e p="Microsoft.CodeAnalysis.CSharp.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.Workspaces.resources.dll" t="Include" />
+        </e>
+        <e p="dotnet-aspnet-codegenerator-design.dll" t="Include" />
+        <e p="e_sqlite3.dll" t="Include" />
+        <e p="es" t="Include">
+          <e p="Microsoft.CodeAnalysis.CSharp.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.Workspaces.resources.dll" t="Include" />
+        </e>
+        <e p="fr" t="Include">
+          <e p="Microsoft.CodeAnalysis.CSharp.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.Workspaces.resources.dll" t="Include" />
+        </e>
+        <e p="it" t="Include">
+          <e p="Microsoft.CodeAnalysis.CSharp.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.Workspaces.resources.dll" t="Include" />
+        </e>
+        <e p="ja" t="Include">
+          <e p="Microsoft.CodeAnalysis.CSharp.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.Workspaces.resources.dll" t="Include" />
+        </e>
+        <e p="ko" t="Include">
+          <e p="Microsoft.CodeAnalysis.CSharp.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.Workspaces.resources.dll" t="Include" />
+        </e>
+        <e p="Microsoft.AspNetCore.NodeServices.dll" t="Include" />
+        <e p="Microsoft.AspNetCore.Razor.Language.dll" t="Include" />
+        <e p="Microsoft.AspNetCore.SpaServices.dll" t="Include" />
+        <e p="Microsoft.AspNetCore.SpaServices.Extensions.dll" t="Include" />
+        <e p="Microsoft.Bcl.AsyncInterfaces.dll" t="Include" />
+        <e p="Microsoft.Bcl.HashCode.dll" t="Include" />
+        <e p="Microsoft.CodeAnalysis.CSharp.dll" t="Include" />
+        <e p="Microsoft.CodeAnalysis.CSharp.Workspaces.dll" t="Include" />
+        <e p="Microsoft.CodeAnalysis.dll" t="Include" />
+        <e p="Microsoft.CodeAnalysis.Razor.dll" t="Include" />
+        <e p="Microsoft.CodeAnalysis.Workspaces.dll" t="Include" />
+        <e p="Microsoft.Data.SqlClient.dll" t="Include" />
+        <e p="Microsoft.Data.Sqlite.dll" t="Include" />
+        <e p="Microsoft.DotNet.PlatformAbstractions.dll" t="Include" />
+        <e p="Microsoft.EntityFrameworkCore.Abstractions.dll" t="Include" />
+        <e p="Microsoft.EntityFrameworkCore.dll" t="Include" />
+        <e p="Microsoft.EntityFrameworkCore.Relational.dll" t="Include" />
+        <e p="Microsoft.EntityFrameworkCore.Sqlite.dll" t="Include" />
+        <e p="Microsoft.EntityFrameworkCore.SqlServer.dll" t="Include" />
+        <e p="Microsoft.Extensions.Caching.Abstractions.dll" t="Include" />
+        <e p="Microsoft.Extensions.Caching.Memory.dll" t="Include" />
+        <e p="Microsoft.Extensions.Configuration.Abstractions.dll" t="Include" />
+        <e p="Microsoft.Extensions.Configuration.Binder.dll" t="Include" />
+        <e p="Microsoft.Extensions.Configuration.dll" t="Include" />
+        <e p="Microsoft.Extensions.DependencyInjection.Abstractions.dll" t="Include" />
+        <e p="Microsoft.Extensions.DependencyInjection.dll" t="Include" />
+        <e p="Microsoft.Extensions.DependencyModel.dll" t="Include" />
+        <e p="Microsoft.Extensions.FileProviders.Abstractions.dll" t="Include" />
+        <e p="Microsoft.Extensions.FileProviders.Physical.dll" t="Include" />
+        <e p="Microsoft.Extensions.FileSystemGlobbing.dll" t="Include" />
+        <e p="Microsoft.Extensions.Logging.Abstractions.dll" t="Include" />
+        <e p="Microsoft.Extensions.Logging.Configuration.dll" t="Include" />
+        <e p="Microsoft.Extensions.Logging.Console.dll" t="Include" />
+        <e p="Microsoft.Extensions.Logging.dll" t="Include" />
+        <e p="Microsoft.Extensions.Options.ConfigurationExtensions.dll" t="Include" />
+        <e p="Microsoft.Extensions.Options.dll" t="Include" />
+        <e p="Microsoft.Extensions.Primitives.dll" t="Include" />
+        <e p="Microsoft.Identity.Client.dll" t="Include" />
+        <e p="Microsoft.IdentityModel.JsonWebTokens.dll" t="Include" />
+        <e p="Microsoft.IdentityModel.Logging.dll" t="Include" />
+        <e p="Microsoft.IdentityModel.Protocols.dll" t="Include" />
+        <e p="Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" t="Include" />
+        <e p="Microsoft.IdentityModel.Tokens.dll" t="Include" />
+        <e p="Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll" t="Include" />
+        <e p="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll" t="Include" />
+        <e p="Microsoft.VisualStudio.Web.CodeGeneration.dll" t="Include" />
+        <e p="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll" t="Include" />
+        <e p="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll" t="Include" />
+        <e p="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll" t="Include" />
+        <e p="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll" t="Include" />
+        <e p="Newtonsoft.Json.dll" t="Include" />
+        <e p="ngSupplyLogic.deps.json" t="Include" />
+        <e p="ngSupplyLogic.dll" t="Include" />
+        <e p="ngSupplyLogic.exe" t="Include" />
+        <e p="ngSupplyLogic.pdb" t="Include" />
+        <e p="ngSupplyLogic.runtimeconfig.json" t="Include" />
+        <e p="ngSupplyLogic.Views.dll" t="Include" />
+        <e p="ngSupplyLogic.Views.pdb" t="Include" />
+        <e p="NuGet.Frameworks.dll" t="Include" />
+        <e p="pl" t="Include">
+          <e p="Microsoft.CodeAnalysis.CSharp.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.Workspaces.resources.dll" t="Include" />
+        </e>
+        <e p="pt-BR" t="Include">
+          <e p="Microsoft.CodeAnalysis.CSharp.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.Workspaces.resources.dll" t="Include" />
+        </e>
+        <e p="publish" t="Include">
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="DataStorage" t="Include">
+            <e p="customerData.json" t="Include" />
+          </e>
+          <e p="ngSupplyLogic.deps.json" t="Include" />
+          <e p="ngSupplyLogic.runtimeconfig.json" t="Include" />
+          <e p="publish" t="Include">
+            <e p="appsettings.Development.json" t="Include" />
+            <e p="appsettings.json" t="Include" />
+            <e p="DataStorage" t="Include">
+              <e p="customerData.json" t="Include" />
+            </e>
+            <e p="ngSupplyLogic.deps.json" t="Include" />
+            <e p="ngSupplyLogic.runtimeconfig.json" t="Include" />
+            <e p="publish" t="Include">
+              <e p="appsettings.Development.json" t="Include" />
+              <e p="appsettings.json" t="Include" />
+              <e p="DataStorage" t="Include">
+                <e p="customerData.json" t="Include" />
+              </e>
+              <e p="ngSupplyLogic.deps.json" t="Include" />
+              <e p="ngSupplyLogic.runtimeconfig.json" t="Include" />
+              <e p="web.config" t="Include" />
+            </e>
+            <e p="web.config" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="ru" t="Include">
+          <e p="Microsoft.CodeAnalysis.CSharp.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.Workspaces.resources.dll" t="Include" />
+        </e>
+        <e p="sni.dll" t="Include" />
+        <e p="SQLitePCLRaw.batteries_v2.dll" t="Include" />
+        <e p="SQLitePCLRaw.core.dll" t="Include" />
+        <e p="SQLitePCLRaw.nativelibrary.dll" t="Include" />
+        <e p="SQLitePCLRaw.provider.dynamic_cdecl.dll" t="Include" />
+        <e p="System.Collections.Immutable.dll" t="Include" />
+        <e p="System.Composition.AttributedModel.dll" t="Include" />
+        <e p="System.Composition.Convention.dll" t="Include" />
+        <e p="System.Composition.Hosting.dll" t="Include" />
+        <e p="System.Composition.Runtime.dll" t="Include" />
+        <e p="System.Composition.TypedParts.dll" t="Include" />
+        <e p="System.Configuration.ConfigurationManager.dll" t="Include" />
+        <e p="System.Diagnostics.DiagnosticSource.dll" t="Include" />
+        <e p="System.IdentityModel.Tokens.Jwt.dll" t="Include" />
+        <e p="System.Runtime.Caching.dll" t="Include" />
+        <e p="System.Security.Cryptography.ProtectedData.dll" t="Include" />
+        <e p="System.Text.Json.dll" t="Include" />
+        <e p="tr" t="Include">
+          <e p="Microsoft.CodeAnalysis.CSharp.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.Workspaces.resources.dll" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="wwwroot" t="Include">
+          <e p="favicon.ico" t="Include" />
+        </e>
+        <e p="zh-Hans" t="Include">
+          <e p="Microsoft.CodeAnalysis.CSharp.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.Workspaces.resources.dll" t="Include" />
+        </e>
+        <e p="zh-Hant" t="Include">
+          <e p="Microsoft.CodeAnalysis.CSharp.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.resources.dll" t="Include" />
+          <e p="Microsoft.CodeAnalysis.Workspaces.resources.dll" t="Include" />
+        </e>
+      </e>
+      <e p="Startup.cs" t="Include" />
+      <e p="WeatherForecast.cs" t="Include" />
+      <e p="wwwroot" t="Include">
+        <e p="favicon.ico" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>

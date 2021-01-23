@@ -1,0 +1,65 @@
+.mat-table {
+  width: 100%;
+  border-radius: 12px;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.profit {
+  color: greenyellow;
+  font-weight: bold;
+}
+
+.mat-card {
+  margin: 10px 0px;
+}
+
+.mat-fab {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 12px;
+}
+
+.control-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mat-form-field + .mat-form-field {
+  color: white;
+}
+
+.control-card {
+  margin: 12px;
+  background: deeppink !important;
+}
+
+.mat-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rep-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.trans-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mat-form-field {
+  margin: 0px 10px;
+}
+
+.filter {
+  margin-left: 12px;
+}

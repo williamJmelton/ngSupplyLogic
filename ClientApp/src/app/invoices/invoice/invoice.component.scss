@@ -1,0 +1,32 @@
+table {
+  width: 100%;
+  border-radius: 7px;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.profit {
+    color: darkolivegreen;
+    font-weight: bold;
+}
+
+.mat-card {
+    margin: 10px 0px;
+}
+
+.mat-fab {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 12px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}

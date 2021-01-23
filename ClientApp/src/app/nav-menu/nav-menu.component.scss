@@ -1,0 +1,59 @@
+.app-title {
+  white-space: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: orange;
+  /* margin: auto; */
+  justify-content: flex-start;
+}
+
+.navbar>.container .navbar-brand {
+  display: flex;
+  justify-content: center;
+}
+
+.mat-toolbar-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.navbar {
+  border-radius: 0% !important;
+}
+
+.logo-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+html {
+  font-size: 64px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+a {
+    font-size: 18px;
+}
+
+.navbar-brand {
+    margin: auto 0;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.link-active {
+  color: orange;
+}

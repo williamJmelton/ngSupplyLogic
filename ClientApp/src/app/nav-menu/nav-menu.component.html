@@ -1,0 +1,28 @@
+<header>
+  <mat-toolbar color="accent">
+    <mat-toolbar-row>
+      <a class="app-title" [routerLink]="['/']">ngSupplyLogic</a>
+      <span class="spacer"></span>
+      <a mat-icon-button class="nav-link text-dark" matTooltip="Home">
+        <mat-icon [routerLinkActiveOptions]="{ exact: true }" [routerLinkActive]="['link-active']" [routerLink]="['/']">
+          home</mat-icon>
+      </a>
+      <a matTooltip="Customers" mat-icon-button class="nav-link text-dark">
+        <mat-icon [routerLink]="['/customer-mgmt']" [routerLinkActiveOptions]="{ exact: true }"
+          [routerLinkActive]="['link-active']">face</mat-icon>
+      </a>
+      <a matTooltip="Send Message" mat-icon-button class="nav-link text-dark">
+        <mat-icon [routerLinkActiveOptions]="{ exact: true }" [routerLinkActive]="['link-active']"
+          [routerLink]="['/send-messages']">message</mat-icon>
+      </a>
+      <a matTooltip="View Invoices" mat-icon-button class="nav-link text-dark">
+        <mat-icon [routerLinkActiveOptions]="{ exact: true }" [routerLinkActive]="['link-active']"
+          (click)="tryNavigate('/invoices')">receipt</mat-icon>
+      </a>
+      <a matTooltip="View Transactions" mat-icon-button class="nav-link text-dark">
+        <mat-icon [routerLinkActiveOptions]="{ exact: true }" [routerLinkActive]="['link-active']"
+          (click)="tryNavigate('/transactions')">local_atm</mat-icon>
+      </a>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</header>

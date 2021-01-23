@@ -1,0 +1,9 @@
+<form class="auth-form">
+    <mat-form-field class=" example-full-width">
+        <mat-label>Password</mat-label>
+        <input type="password" name="password" matInput [(ngModel)]="password">
+    </mat-form-field>
+    <button (click)="end()" mat-raised-button color="primary">
+        <mat-icon>lock_open</mat-icon>
+    </button>
+</form>

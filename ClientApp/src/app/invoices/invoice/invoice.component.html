@@ -1,0 +1,51 @@
+<mat-card>
+  <div class="card-info" *ngIf="InvoiceLines != null">
+    <h2 class="mat-display-2">Invoice Detail for #{{invoiceID}}</h2>
+    <h4 class="mat-display-2">Total: {{ getInvoiceTotal() | currency }}</h4>
+  </div>
+</mat-card>
+
+<mat-card>
+  <table mat-table
+         *ngIf="InvoiceLines != null"
+         [dataSource]="InvoiceLines"
+         class="mat-elevation-z5"
+         multiTemplateDataRows
+         matSort>
+    <ng-container matColumnDef="itemName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Item</th>
+      <td mat-cell *matCellDef="let line">{{ line.itemName }}</td>
+      <td mat-footer-cell *matFooterCellDef></td>
+    </ng-container>
+
+    <ng-container matColumnDef="orderQty">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Quantity</th>
+      <td mat-cell *matCellDef="let line">{{ line.orderQty }}</td>
+      <td mat-footer-cell *matFooterCellDef></td>
+    </ng-container>
+
+    <ng-container matColumnDef="unitName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Unit</th>
+      <td mat-cell *matCellDef="let line">{{ line.unitName }}</td>
+      <td mat-footer-cell *matFooterCellDef><strong>Profit:</strong></td>
+    </ng-container>
+
+    <ng-container matColumnDef="itemProfit">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Profit</th>
+      <td mat-cell *matCellDef="let line">{{ line.itemProfit | currency }}</td>
+      <td mat-footer-cell *matFooterCellDef> {{ getProfitTotal() | currency }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="isGeneral">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>General</th>
+      <td mat-cell *matCellDef="let line">{{ line.isGeneralGoods }}</td>
+      <td mat-footer-cell *matFooterCellDef> </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row
+        *matRowDef="let row; columns: displayedColumns; let i = index"
+        class="example-detail-row"></tr>
+    <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+  </table>
+</mat-card>
