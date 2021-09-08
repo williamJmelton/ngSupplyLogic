@@ -16,6 +16,11 @@ import { Parser } from "json2csv";
 
 import UnPostedInvoice from "../../models/UnPostedInvoice.model";
 
+interface Month {
+  value: number,
+  viewValue: string
+}
+
 @Component({
   selector: "app-invoices",
   templateUrl: "./invoices.component.html",
@@ -25,19 +30,46 @@ export class InvoicesComponent implements OnInit, AfterViewInit {
   displayedColumns: string[] = [
     "select",
     "view",
+    "repFirstName",
     "num",
     "name",
     "invoicedDate",
-    "repFirstName",
     "totalPrice",
     "totalProfit",
+    // "marlQty"
   ];
+
+  monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+ d = new Date();
+
+  months: Month[] = [
+    {viewValue: '01 January', value: 1},
+    {viewValue: '02 Feburary', value: 2},
+    {viewValue: '03 March', value: 3},
+    {viewValue: '04 April', value: 4},
+    {viewValue: '05 May', value: 5},
+    {viewValue: '06 June', value: 6},
+    {viewValue: '07 July', value: 7},
+    {viewValue: '08 August', value: 8},
+    {viewValue: '09 September', value: 9},
+    {viewValue: '10 October', value: 10},
+    {viewValue: '11 November', value: 11},
+    {viewValue: '12 December', value: 12},
+  ]
+
+  // Select the current month by default.
+  selectedMonth: Month = this.months[new Date().getMonth()];
+  selectedMonthName: string;
 
   unPostedDataSource: MatTableDataSource<UnPostedInvoice> = null;
   ordersForSelectedDate: UnPostedInvoice[];
   customerNumber: number = null;
   selectedDate: Date = new Date();
   currentInvoiceView: string = "Un-Posted";
+  marlQty: number = 0;
 
   url: string;
   selection = new SelectionModel<UnPostedInvoice>(true, []);
@@ -52,11 +84,20 @@ export class InvoicesComponent implements OnInit, AfterViewInit {
     this.url = baseUrl;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // console.log(this.url + `invoices/date/`)
+  }
+
+  displaySelectedMonth(): string {
+    return this.selectedMonth.viewValue;
+  }
 
   ngAfterViewInit(): void {
     this.http.get<UnPostedInvoice[]>(this.url + "invoices/unposted").subscribe(
       (result) => {
+        result.forEach(val => {
+          console.log('getting marl qty')
+        })
         this.unPostedDataSource = new MatTableDataSource<UnPostedInvoice>(
           result
         );
@@ -65,6 +106,35 @@ export class InvoicesComponent implements OnInit, AfterViewInit {
       (error) => console.error(error)
     );
     setTimeout(() => (this.unPostedDataSource.sort = this.sort), 5000);
+  }
+
+  getCustomersMarlQty(customerNum: number): number {
+    let marlQty: number;
+
+    this.http.get<number>(this.url + "invoices/marl/" + customerNum).subscribe(
+      (result) => {
+        this.marlQty = result;
+        console.log("result was: " + result);
+        return result;
+      }
+    );
+    console.log(marlQty);
+
+    return marlQty;
+  }
+
+  getCustomersMarlQtyForSelectedMonth(customerNum: number, monthNum: number): void {
+    let marlQty: number;
+    this.selectedMonth = this.months[monthNum - 1];
+    console.log("getting marl for C#" + customerNum + "for month of " + monthNum);
+
+    this.http.get<number>(this.url + "invoices/marl/" + customerNum + "/" + monthNum).subscribe(
+      (result) => {
+        this.marlQty = result;
+        console.log("result was: " + result);
+        return result;
+      }
+    );
   }
 
   getInvoicesByDate(selectedDate: Date) {
@@ -133,8 +203,8 @@ export class InvoicesComponent implements OnInit, AfterViewInit {
     this.isAllSelected()
       ? this.selection.clear()
       : this.unPostedDataSource.data.forEach((row) =>
-          this.selection.select(row)
-        );
+        this.selection.select(row)
+      );
   }
 
   /** The label for the checkbox on the passed row */
@@ -142,9 +212,8 @@ export class InvoicesComponent implements OnInit, AfterViewInit {
     if (!row) {
       return `${this.isAllSelected() ? "select" : "deselect"} all`;
     }
-    return `${this.selection.isSelected(row) ? "deselect" : "select"} row ${
-      row.name
-    }`;
+    return `${this.selection.isSelected(row) ? "deselect" : "select"} row ${row.name
+      }`;
   }
 
   getTotalProfits(): number {

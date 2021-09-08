@@ -9,6 +9,7 @@ interface UnPostedInvoice {
     repFirstName: string;
     repLastName: string;
     repMiddleName: string;
+    marlQty: number;
 }
 
 export default UnPostedInvoice;

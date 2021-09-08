@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { UiService } from './../ui.service';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-nav-menu',
@@ -10,12 +11,16 @@ import { Router } from '@angular/router';
 export class NavMenuComponent {
   isExpanded = false;
 
-  constructor(private _ui: UiService, private _router: Router) {
+  constructor(private _ui: UiService, private _router: Router, private http: HttpClient) {
 
   }
 
   collapse() {
     this.isExpanded = false;
+  }
+
+  openDoor() {
+    this.http.get("http://localhost:5100/api/door").subscribe((res: string) => console.log(res));
   }
 
   tryNavigate(route: string): void {

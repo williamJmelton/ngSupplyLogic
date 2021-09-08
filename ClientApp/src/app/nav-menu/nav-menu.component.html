@@ -23,6 +23,10 @@
         <mat-icon [routerLinkActiveOptions]="{ exact: true }" [routerLinkActive]="['link-active']"
           (click)="tryNavigate('/transactions')">local_atm</mat-icon>
       </a>
+      <a matTooltip="Open Warehouse Door" mat-icon-button class="nav-link text-dark">
+        <mat-icon [routerLinkActiveOptions]="{ exact: true }" [routerLinkActive]="['link-active']"
+          (click)="openDoor()">door</mat-icon>
+      </a>
     </mat-toolbar-row>
   </mat-toolbar>
 </header>
